@@ -1,11 +1,10 @@
 $engine: 3
 $onesync: on
-recipeName: QBCore Framework
-recipeVersion: 2.2.4
-recipeAuthor: JericoFx & Kakarot & Hamy
-name: Project Darkland
-version: 0.0.1
-author: JonesTown
+serverName: Project Darkland
+recipeVersion: 0.0.1
+name: QBCore Framework
+version: 2.2.4
+author: JericoFx & Kakarot & Hamy
 description: An advanced FiveM RP framework including jobs, gangs, housing & more!
 
 tasks:
@@ -34,18 +33,6 @@ tasks:
     subpath: resources
     dest: ./resources/[cfx-default]
 
-  - action: remove_path
-  path: ./resources/[cfx-default]/[test]
-
-  - action: remove_path
-  path: ./resources/[cfx-default]/[system]/sessionmanager-rdr3
-
-  - action: remove_path
-  path: ./resources/[cfx-default]/[local]
-
-  - action: remove_path
-  path: ./resources/[cfx-default]/[gameplay]/[examples]
-
   - action: download_file
     path: ./tmp/files/oxmysql.zip
     url: https://github.com/overextended/oxmysql/releases/download/v2.7.5/oxmysql.zip
@@ -63,7 +50,7 @@ tasks:
   - action: download_github
     dest: ./resources/[standalone]/bob74_ipl
     ref: master
-    src: https://github.com/qbcore-framework/bob74_ipl
+    src: https://github.com/Bob74/bob74_ipl
 
   - action: download_github
     dest: ./resources/[standalone]/safecracker
